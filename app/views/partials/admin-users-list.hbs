@@ -1,0 +1,38 @@
+<div class="uk-margin uk-width-3xlarge uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+  <table class="uk-table">
+    <caption>
+      List of current users
+    </caption>
+    <thead class="uk-text-nowrap">
+      <th>User ID</th>
+      <th>First Name</th>
+      <th>Email</th>
+      <th>Active User</th>
+      <th>Details</th>
+      <th>Delete</th>
+
+    </thead>
+    <tbody class="uk-text-left">
+      {{#each users}}
+        <tr>
+          <td class="uk-text-nowrap">{{_id}}</td>
+          <td class="uk-text-nowrap">{{firstName}} {{lastName}}</td>
+          <td class="uk-text-nowrap">{{email}}</td>
+          <td class="uk-text-nowrap uk-text-center">Yes</td>
+          <td >
+            <a href='/admin-update-user/{{_id}}' style="padding-left: 0.5em;" class="uk-card uk-card-small uk-card-hover">
+              <i  class=" fas far fa-user-edit fa-2x " style="color:rgb(0,155,119);" title="Details" uk-tooltip>
+              </i>
+            </a>
+          </td>
+          <td>
+            <a href="/admin-delete-user/{{_id}}"  style="padding-left: 0.5em;" class="uk-card uk-card-small uk-card-hover " >
+             <i class=" fas far fa-trash-alt fa-2x uk-position-relative uk-position-right " style="color:rgb(0,155,119);" title="Delete User" uk-tooltip>
+             </i>
+            </a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

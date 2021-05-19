@@ -1,2 +1,2 @@
-# POIAppA2
-POI App Assignment2
+# POIApp
+Places of Interest Application

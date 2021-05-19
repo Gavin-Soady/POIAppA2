@@ -1,0 +1,53 @@
+<div class="uk-margin uk-width-3xlarge uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+  <table class="uk-table">
+    <caption>
+      Points of Interest Users have added
+    </caption>
+    <thead class="uk-text-nowrap">
+      <th>Name</th>
+      <th>County</th>
+      <th>Weather</th>
+      <th>Feels Like</th>
+      <th>Category</th>
+      <th>Added by</th>
+      <th>Gallery</th>
+      <th>Details</th>
+      <th>Delete</th>
+
+    </thead>
+    <tbody class="uk-text-left">
+      {{#each pois}}
+        <tr>
+          <td class="uk-text-nowrap">{{name}}</td>
+          <td>{{county}}</td>
+          <td class="uk-text-center" ><i class="fas {{clouds}} fa-2x"></i></td>
+          <td class="uk-text-center" >{{feelsLike}}°</td>
+          <td>{{cat}}</td>
+          {{#if adder.firstName}}
+            <td class="uk-text-nowrap">{{adder.firstName}} {{adder.lastName}} </td>
+          {{else}}
+            <td class="uk-text-nowrap">User deleted... </td>
+          {{/if}}
+
+          <td>
+          <a href="/gallery/{{_id}}" style="padding-left: 0.5em;" class="uk-card uk-card-small uk-card-hover" >
+            <i class="fas far fa-images fa-2x" style="color:rgb(0,155,119);"  pos="top" title="open gallery" uk-tooltip></i>
+          </a>
+          </td>
+          <td >
+            <a href='/admin-update-poi/{{_id}}' style="padding-left: 0.5em;" class="uk-card uk-card-small uk-card-hover">
+              <i  class=" fas far fa-user-edit fa-2x " style="color:rgb(0,155,119);" title="Details" uk-tooltip>
+              </i>
+            </a>
+          </td>
+          <td>
+            <a href="/admin-delete-poi/{{_id}}"  style="padding-left: 0.5em;" class="uk-card uk-card-small uk-card-hover " >
+             <i class=" fas far fa-trash-alt fa-2x uk-position-relative uk-position-right " style="color:rgb(0,155,119);" title="Delete Point Of Interest" uk-tooltip>
+             </i>
+            </a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
