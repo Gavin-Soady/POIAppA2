@@ -13,7 +13,7 @@ const Accounts = {
   showSignup: {
     auth: false,
     handler: function (request, h) {
-      return h.view("signup", { title: "Sign up to Add ad View POI in Ireland" });
+      return h.view("signup", { title: "Sign up to Add ad View POI in Ireland"});
     },
   },
   signup: {
@@ -63,7 +63,7 @@ const Accounts = {
   showLogin: {
     auth: false,
     handler: function (request, h) {
-      return h.view("login", { title: "Login to POI" });
+      return h.view("login", { title: "Login to POI"  });
     },
   },
   login: {
