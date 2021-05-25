@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a921156c-3b14-4dc6-bd43-58d1916b26db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/API/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/seed-data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes-api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/user-api-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/accounts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/API/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/auth-api-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/poi-api-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/API/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/API/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/signup.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/signup.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/POI-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/POI-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/user-api-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/user-api-test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Assignment1/Assignment1/POIApp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -51,18 +54,19 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gsoad\Desktop\Desktop\WIT\Enterprise Web Dev\Assignment2\Assignment2_1.0\test" />
       <recent name="C:\Users\gsoad\Desktop\Desktop\WIT\Enterprise Web Dev\Assignment2\Assignment2_1.0\app\models" />
       <recent name="C:\Users\gsoad\Desktop\Desktop\WIT\Enterprise Web Dev\Assignment2\Assignment2_1.0" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.test/user-api-test.js">
+  <component name="RunManager" selected="Mocha.All Tests">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="user-api-test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="user-api-test.js" working-dir="$PROJECT_DIR$/test">
       <method v="2" />
     </configuration>
-    <configuration name="test/user-api-test.js" type="mocha-javascript-test-runner">
+    <configuration name="All Tests" type="mocha-javascript-test-runner">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -70,12 +74,13 @@
       <pass-parent-env>true</pass-parent-env>
       <ui>tdd</ui>
       <extra-mocha-options />
-      <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/test/user-api-test.js</test-file>
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory>$PROJECT_DIR$/test</test-directory>
+      <recursive>false</recursive>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Mocha.test/user-api-test.js" />
+      <item itemvalue="Mocha.All Tests" />
       <item itemvalue="Node.js.index.js" />
       <item itemvalue="Node.js.user-api-test.js" />
     </list>
@@ -94,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621429871068</updated>
-      <workItem from="1621429872127" duration="19526000" />
+      <workItem from="1621429872127" duration="37977000" />
     </task>
     <servers />
   </component>
@@ -102,37 +107,37 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621448368606">
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621508634044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1621448368606" />
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1621508634044" />
     <state x="390" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621432455632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1621432455632" />
-    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1621448364280">
+    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1621956208275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621448364280" />
-    <state width="1050" height="266" key="GridCell.Tab.0.bottom" timestamp="1621454859690">
+    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621956208275" />
+    <state width="1345" height="214" key="GridCell.Tab.0.bottom" timestamp="1621958053702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1050" height="266" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621454859690" />
-    <state width="1050" height="266" key="GridCell.Tab.0.center" timestamp="1621454859690">
+    <state width="1345" height="214" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1621958053702" />
+    <state width="1345" height="214" key="GridCell.Tab.0.center" timestamp="1621958053702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1050" height="266" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621454859690" />
-    <state width="1050" height="266" key="GridCell.Tab.0.left" timestamp="1621454859690">
+    <state width="1345" height="214" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1621958053702" />
+    <state width="1345" height="214" key="GridCell.Tab.0.left" timestamp="1621958053702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1050" height="266" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621454859690" />
-    <state width="1050" height="266" key="GridCell.Tab.0.right" timestamp="1621454859690">
+    <state width="1345" height="214" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1621958053702" />
+    <state width="1345" height="214" key="GridCell.Tab.0.right" timestamp="1621958053702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1050" height="266" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621454859690" />
-    <state x="323" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621448337245">
+    <state width="1345" height="214" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1621958053702" />
+    <state x="323" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621508565106">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="323" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1621448337245" />
+    <state x="323" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1621508565106" />
   </component>
 </project>
