@@ -1,37 +1,16 @@
 "use strict";
 
-const User = require("../models/user");
+const POI = require("../models/poi");
 const Boom = require("@hapi/boom");
 const utils = require('./utils.js');
 
-const Users = {
-
-  authenticate: {
-    auth: {
-      strategy: "jwt",
-    },
-    handler: async function (request, h) {
-      try {
-        const user = await User.findOne({ email: request.payload.email });
-        if (!user) {
-          return Boom.unauthorized("User not found");
-        } else if (user.password !== request.payload.password) {
-          return Boom.unauthorized("Invalid password");
-        } else {
-          const token = utils.createToken(user);
-          return h.response({ success: true, token: token }).code(201);
-        }
-      } catch (err) {
-        return Boom.notFound("internal db failure");
-      }
-    },
-  },
+const POIs = {
 
   find: {
     auth: false,
     handler: async function (request, h) {
-      const users = await User.find();
-      return users;
+      const pois = await POI.find();
+      return pois;
     },
   },
 
@@ -39,13 +18,13 @@ const Users = {
     auth: false,
     handler: async function (request, h) {
       try {
-        const user = await User.findOne({ _id: request.params.id });
-        if (!user) {
-          return Boom.notFound("No User with this id");
+        const poi = await POI.findOne({ _id: request.params.id });
+        if (!poi) {
+          return Boom.notFound("No POI with this id");
         }
-        return user;
+        return poi;
       } catch (err) {
-        return Boom.notFound("No User with this id");
+        return Boom.notFound("No POI with this id");
       }
     },
   },
@@ -53,19 +32,20 @@ const Users = {
   create: {
     auth: false,
     handler: async function (request, h) {
-      const newUser = new User(request.payload);
-      const user = await newUser.save();
-      if (user) {
-        return h.response(user).code(201);
+      const newPOI = new POI(request.payload);
+      console.log(request.payload);
+      const poi = await newPOI.save();
+      if (poi) {
+        return h.response(poi).code(201);
       }
-      return Boom.badImplementation("error creating user");
+      return Boom.badImplementation("error creating POI");
     },
   },
 
   deleteAll: {
     auth: false,
     handler: async function (request, h) {
-      await User.deleteMany({});
+      await POI.deleteMany({});
       return { success: true };
     },
   },
@@ -73,8 +53,8 @@ const Users = {
   deleteOne: {
     auth: false,
     handler: async function (request, h) {
-      const user = await User.deleteOne({ _id: request.params.id });
-      if (user) {
+      const poi = await POI.deleteOne({ _id: request.params.id });
+      if (poi) {
         return { success: true };
       }
       return Boom.notFound("id not found");
@@ -82,4 +62,4 @@ const Users = {
   },
 };
 
-module.exports = Users;
+module.exports = POIs;

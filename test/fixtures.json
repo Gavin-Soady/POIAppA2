@@ -25,8 +25,38 @@
     "firstName": "Barnie",
     "lastName": "Grumble",
     "email": "barnie@grumble.com",
-
     "password": "secret"
+  },
+  "pois": [
+    {
+      "name": "The Canal",
+      "county": "Kildare",
+      "long": 53.220566 ,
+      "lat": -6.659308,
+      "cat": "walk"
+    },
+    {
+      "name": "The Canal",
+      "county": "Kildare",
+      "long": 53.220566 ,
+      "lat": -6.659308,
+      "cat": "walk"
+    },
+    {
+      "name": "The Canal",
+      "county": "Kildare",
+      "long": 53.220566 ,
+      "lat": -6.659308,
+      "cat": "walk"
+    }
+  ],
+  "newPOI":
+  {
+    "name": "The Canal",
+    "county": "Kildare",
+    "long": 53.220566 ,
+    "lat": -6.659308,
+    "cat": "walk"
   },
   "password": "$2a$10$gqwpr1wjQl7Uk8h6eeDZBuRjumVmgYrZyD0bDapvVNFno0VtCOdqO"
 

@@ -65,6 +65,50 @@ class POIService {
   async clearAuth(user) {
     axios.defaults.headers.common["Authorization"] = "";
   }
+
+  async createPOI(newPOI) {
+    try {
+      const response = await axios.post(this.baseUrl + "/api/pois", newPOI);
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  async deleteOnePOI(id) {
+    try {
+      const response = await axios.delete(this.baseUrl + "/api/pois/" + id);
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+  async getPOI(id) {
+    try {
+      const response = await axios.get(this.baseUrl + "/api/pois/" + id);
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+  async deleteAllPOIs() {
+    try {
+      const response = await axios.delete(this.baseUrl + "/api/pois");
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  async getPOIs() {
+    try {
+      const response = await axios.get(this.baseUrl + "/api/pois");
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+
 }
 
 module.exports = POIService;
