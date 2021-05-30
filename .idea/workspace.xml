@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a921156c-3b14-4dc6-bd43-58d1916b26db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/accounts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/pois.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/pois.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/admin-poi-list.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/admin-poi-list.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/partials/poi-list.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/partials/poi-list.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/signup.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/signup.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/accept/lib/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/accept/lib/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/accept/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/accept/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/accept/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/accept/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/catbox-memory/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/catbox-memory/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/catbox-memory/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/catbox-memory/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/response.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/response.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/transmit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/hapi/lib/transmit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/hapi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/hapi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/mimos/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/mimos/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/mimos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/mimos/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/podium/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/podium/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/podium/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/podium/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/somever/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/somever/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/somever/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/somever/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@hapi/somever/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@hapi/somever/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-db/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-db/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-db/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-db/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-db/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-db/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-db/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-db/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1skwPNP38vLdxbiMblnd94SFHfs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/API" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\gsoad\Desktop\Desktop\WIT\Enterprise Web Dev\Assignment2\Assignment2_1.0\node_modules\prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gsoad\Desktop\Desktop\WIT\Enterprise Web Dev\Assignment2\Assignment2_1.0\app\API" />
+      <recent name="C:\Users\gsoad\Desktop\Desktop\WIT\Enterprise Web Dev\Assignment2\Assignment2_1.0\test" />
+      <recent name="C:\Users\gsoad\Desktop\Desktop\WIT\Enterprise Web Dev\Assignment2\Assignment2_1.0\app\models" />
+      <recent name="C:\Users\gsoad\Desktop\Desktop\WIT\Enterprise Web Dev\Assignment2\Assignment2_1.0" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.index.js">
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="user-api-test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="user-api-test.js" working-dir="$PROJECT_DIR$/test">
+      <method v="2" />
+    </configuration>
+    <configuration name="All Tests" type="mocha-javascript-test-runner">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>tdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory>$PROJECT_DIR$/test</test-directory>
+      <recursive>false</recursive>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Mocha.All Tests" />
+      <item itemvalue="Node.js.index.js" />
+      <item itemvalue="Node.js.user-api-test.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Node.js.user-api-test.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a921156c-3b14-4dc6-bd43-58d1916b26db" name="Default Changelist" comment="" />
+      <created>1621429871068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621429871068</updated>
+      <workItem from="1621429872127" duration="51190000" />
+      <workItem from="1622196879608" duration="7265000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621508634044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1621508634044" />
+    <state x="390" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621432455632">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1621432455632" />
+    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1621956208275">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621956208275" />
+    <state width="1345" height="235" key="GridCell.Tab.0.bottom" timestamp="1622365545738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="235" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1622365545738" />
+    <state width="1345" height="235" key="GridCell.Tab.0.center" timestamp="1622365545738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="235" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1622365545738" />
+    <state width="1345" height="235" key="GridCell.Tab.0.left" timestamp="1622365545738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="235" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1622365545738" />
+    <state width="1345" height="235" key="GridCell.Tab.0.right" timestamp="1622365545738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="235" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1622365545738" />
+    <state x="323" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1621508565106">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="323" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1621508565106" />
+  </component>
+</project>
