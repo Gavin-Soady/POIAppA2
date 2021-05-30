@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a921156c-3b14-4dc6-bd43-58d1916b26db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/API/pois.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/pois.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/API/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/API/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/auth-api-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/auth-api-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/poi-api-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/poi-api-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/user-api-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/user-api-test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +74,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Mocha.All Tests" />
       <item itemvalue="Node.js.index.js" />
       <item itemvalue="Node.js.user-api-test.js" />
-      <item itemvalue="Mocha.All Tests" />
     </list>
     <recent_temporary>
       <list>
@@ -89,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621429871068</updated>
       <workItem from="1621429872127" duration="51190000" />
-      <workItem from="1622196879608" duration="7764000" />
+      <workItem from="1622196879608" duration="9532000" />
     </task>
     <servers />
   </component>
