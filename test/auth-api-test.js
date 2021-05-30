@@ -6,7 +6,7 @@ const fixtures = require("./fixtures.json");
 const utils = require("../app/api/utils.js");
 
 suite("Authentication api tests", function () {
-  let users = fixtures.users;
+  //let users = fixtures.users;
   let newUser = fixtures.newUser;
 
   const poiService = new POIService(fixtures.poiService);

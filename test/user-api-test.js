@@ -22,6 +22,8 @@ suite("User api tests", function () {
 
   test("create a user", async function () {
     const returnedUser = await poiService.createUser(newUser);
+    console.log(returnedUser);
+    console.log(newUser);
     assert(_.some([returnedUser], newUser), "returnedUser must be a superset of newUser");
     assert.isDefined(returnedUser._id);
   });
