@@ -58,6 +58,37 @@
     "lat": -6.659308,
     "cat": "walk"
   },
+  "faves": [
+    {
+      "name": "The place",
+      "county": "Kildare",
+      "long": 54.220566 ,
+      "lat": -6.659301,
+      "cat": "run"
+    },
+    {
+      "name": "The Other place",
+      "county": "Kildare",
+      "long": 53.220571 ,
+      "lat": -6.659312,
+      "cat": "bridge"
+    },
+    {
+      "name": "The Last Place",
+      "county": "Kildare",
+      "long": 53.220586 ,
+      "lat": -6.659338,
+      "cat": "walk"
+    }
+  ],
+  "newFave":
+  {
+    "name": "Favourite Place",
+    "county": "Kildare",
+    "long": 53.220569 ,
+    "lat": -6.659369,
+    "cat": "walk"
+  },
   "password": "$2a$10$gqwpr1wjQl7Uk8h6eeDZBuRjumVmgYrZyD0bDapvVNFno0VtCOdqO"
 
 }
