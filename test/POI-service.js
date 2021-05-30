@@ -109,6 +109,50 @@ class POIService {
     }
   }
 
+  //Faves here
+  async createFave(newFave) {
+    try {
+      const response = await axios.post(this.baseUrl + "/api/favourites", newFave);
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  async deleteOneFave(id) {
+    try {
+      const response = await axios.delete(this.baseUrl + "/api/favourites/" + id);
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+  async getFave(id) {
+    try {
+      const response = await axios.get(this.baseUrl + "/api/favourites/" + id);
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+  async deleteAllFaves() {
+    try {
+      const response = await axios.delete(this.baseUrl + "/api/favourites");
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  async getFaves() {
+    try {
+      const response = await axios.get(this.baseUrl + "/api/favourites");
+      return response.data;
+    } catch (e) {
+      return null;
+    }
+  }
+
 }
 
 module.exports = POIService;
