@@ -13,18 +13,17 @@
       <th>Gallery</th>
       <th>Details</th>
       <th>Delete</th>
-
     </thead>
     <tbody class="uk-text-left">
       {{#each pois}}
         <tr>
-          <td class="uk-text-nowrap">{{name}}</td>
+          <td >{{name}}</td>
           <td>{{county}}</td>
           <td class="uk-text-center" ><i class="fas {{clouds}} fa-2x"></i></td>
           <td class="uk-text-center" >{{feelsLike}}°</td>
           <td>{{cat}}</td>
           {{#if adder.firstName}}
-            <td class="uk-text-nowrap">{{adder.firstName}} {{adder.lastName}} </td>
+            <td class="uk-text-truncate">{{adder.firstName}} {{adder.lastName}} </td>
           {{else}}
             <td class="uk-text-nowrap">User deleted... </td>
           {{/if}}

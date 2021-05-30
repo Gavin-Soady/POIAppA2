@@ -7,9 +7,7 @@ const utils = require('./utils.js');
 const Users = {
 
   authenticate: {
-    auth: {
-      strategy: "jwt",
-    },
+    auth: false,
     handler: async function (request, h) {
       try {
         const user = await User.findOne({ email: request.payload.email });

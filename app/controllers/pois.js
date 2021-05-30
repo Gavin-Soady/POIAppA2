@@ -24,6 +24,27 @@ const POIS = {
     }
   },
   add: {
+    validate: {
+      payload: {
+        name: Joi.string().required(),
+        county: Joi.string().required(),
+        long: Joi.number().required(),
+        lat: Joi.number().required(),
+        cat: Joi.string().required(),
+      },
+      options: {
+        abortEarly: false,
+      },
+      failAction: function (request, h, error) {
+        return h
+          .view("home", {
+            title: "POI Error",
+            errors: error.details,
+          })
+          .takeover()
+          .code(400);
+      },
+    },
     handler: async function(request, h) {
       try {
         const id = request.auth.credentials.id;

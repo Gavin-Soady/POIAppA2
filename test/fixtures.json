@@ -25,7 +25,9 @@
     "firstName": "Barnie",
     "lastName": "Grumble",
     "email": "barnie@grumble.com",
-    "password": "$2a$10$gqwpr1wjQl7Uk8h6eeDZBuRjumVmgYrZyD0bDapvVNFno0VtCOdqO"
-  }
+
+    "password": "secret"
+  },
+  "password": "$2a$10$gqwpr1wjQl7Uk8h6eeDZBuRjumVmgYrZyD0bDapvVNFno0VtCOdqO"
 
 }
