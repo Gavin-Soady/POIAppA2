@@ -2,6 +2,8 @@
 const User = require("../models/user");
 const Boom = require("@hapi/boom");
 const Joi = require("@hapi/joi");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 const Accounts = {
   index: {
@@ -20,10 +22,12 @@ const Accounts = {
     auth: false,
     validate: {
       payload: {
-        firstName: Joi.string().required(),
-        lastName: Joi.string().required(),
+        firstName: Joi.string().required().regex(/^[A-Z][a-z]{2,}$/),
+        //Will allow hyphen and apostrophe
+        lastName: Joi.string().required().regex(/^[A-Z][-'a-zA-Z]{2,}$/),
         email: Joi.string().email().required(),
-        password: Joi.string().required(),
+        //Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:
+        password: Joi.string().required().regex(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/),
       },
       options: {
         abortEarly: false,
@@ -46,11 +50,12 @@ const Accounts = {
           const message = "Email address is already registered";
           throw Boom.badData(message);
         }
+        const hash = await bcrypt.hash(payload.password, saltRounds);
         const newUser = new User({
           firstName: payload.firstName,
           lastName: payload.lastName,
           email: payload.email,
-          password: payload.password,
+          password: hash,
         });
         user = await newUser.save();
         request.cookieAuth.set({ id: user.id });
@@ -94,7 +99,7 @@ const Accounts = {
           const message = "Email address is not registered";
           throw Boom.unauthorized(message);
         }
-        user.comparePassword(password);
+        await user.comparePassword(password);
         request.cookieAuth.set({ id: user.id });
         return h.redirect("/report");
       } catch (err) {
@@ -122,10 +127,12 @@ const Accounts = {
   updateSettings: {
     validate: {
       payload: {
-        firstName: Joi.string().required(),
-        lastName: Joi.string().required(),
+        firstName: Joi.string().required().regex(/^[A-Z][a-z]{2,}$/),
+        //Will allow hyphen and apostrophe
+        lastName: Joi.string().required().regex(/^[A-Z][-'a-zA-Z]{2,}$/),
         email: Joi.string().email().required(),
-        password: Joi.string().required(),
+        //Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character:
+        password: Joi.string().required().regex(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/),
       },
       options: {
         abortEarly: false,
@@ -144,11 +151,12 @@ const Accounts = {
       try {
         const userEdit = request.payload;
         const id = request.auth.credentials.id;
+        const hash = await bcrypt.hash(userEdit.password, saltRounds);
         const user = await User.findById(id);
         user.firstName = userEdit.firstName;
         user.lastName = userEdit.lastName;
         user.email = userEdit.email;
-        user.password = userEdit.password;
+        user.password = hash;
         await user.save();
         return h.redirect("/report");
       } catch (err) {
